@@ -1,0 +1,17 @@
+package com.loiane.cursojava.aula15.labs.correaçao;
+
+import java.util.Scanner;
+
+public class Exer20 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		
+		
+		
+		
+		
+	}
+
+}
