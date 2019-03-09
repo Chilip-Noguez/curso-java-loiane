@@ -25,6 +25,7 @@ public class Exer03 {
 				System.out.println("Mínimo de 3 caracteres, insira novamente");
 			} } while(!infoValida);
 		
+		infoValida = false;
 		do {	
 			System.out.println("Entre com sua idade: ");
 			idade = input.nextInt();
@@ -36,6 +37,7 @@ public class Exer03 {
 				System.out.println("Idade entre 0 e 150 anos, insira novamente.");
 			} } while(!infoValida);
 		
+		infoValida = false;
 		do {	
 			System.out.println("Entre seu salário: ");
 			salario = input.nextDouble();
@@ -46,6 +48,7 @@ public class Exer03 {
 				System.out.println("Salário deve ser maior que 0, insira novamente. ");
 			} } while(!infoValida);
 		
+		infoValida = false;
 		do {	
 			System.out.println("Entre com seu sexo F ou M: ");
 			sexo = input.next();
@@ -58,7 +61,11 @@ public class Exer03 {
 			} } while(!infoValida);
 			
 		
-		
+		System.out.println("As seguintes infos foram coletadas.");
+		System.out.println("Nome: " + nome);
+		System.out.println("Idade: " + idade);
+		System.out.println("Salário: " + salario);
+		System.out.println("Sexo: " + sexo);
 		
 		
 	}
