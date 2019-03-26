@@ -14,19 +14,33 @@ public class Exer25 {
 		for (int i=0; i<vetorA.length; i++) {
 			System.out.println("Entre com um número para posição " + i);
 			vetorA[i] = input.nextInt();
-			
-			System.out.println("Entre com um número para posição " + i);
-			vetorB[i] = input.nextInt();
-			
-			if (vetorA[i] % 2 == 0) {
+							
+			/*if (vetorA[i] % 2 == 0) {
 				vetorB[i] = 1;
-			} else if(vetorA[i] % 2 !=0) {
+			} else {
 				vetorB[i] = 0;
-			}
+			}*/
+			/*pode ser feito com operador ternário:
+			 * vetorB[i] = (vetorA[i] % 2 == 0) ? 1 : 0;
+			 * vetorA recebe o primeiro operando -> (vetorA[i] % 2 == 0)
+			 * ? igual ao IF, o segundo operando (nesse caso o 1)
+			 * :igual senão e o terceiro operando(nessa caso 0).
+			 * */
+			
+			vetorB[i] = (vetorA[i] % 2 == 0) ? 1 : 0;
 		}
 		
+		System.out.print("Vetor A =");
+		for(int i=0; i<vetorA.length; i++) {
+			System.out.print(vetorA[i] + " ");
+		}
 		
+		System.out.println();
 		
+		System.out.print("Vetor B = ");
+		for(int i=0; i<vetorB.length; i++) {
+			System.out.print(vetorB[i] + " ");
+		}
 		
 	}
 
